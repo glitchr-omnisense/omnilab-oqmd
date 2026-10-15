@@ -1,0 +1,45 @@
+{
+    "name": "omnilab/oqmd",
+    "type": "library",
+    "description": "Omnilab OQMD: the Open Quantum Materials Database - an entry by its OQMD id (formula, space group, prototype, volume, formation energy, hull distance, band gap, ICSD id) and the entries of a composition or a phase space, through its RESTful API, no key. Not tested live.",
+    "keywords": [
+        "science",
+        "chemistry",
+        "materials",
+        "oqmd",
+        "dft",
+        "formation energy",
+        "omnilab"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "glitchr/omnilab": "^1.0@dev",
+        "symfony/http-client": "^6.4|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnilab\\Oqmd\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Omnilab\\Oqmd\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

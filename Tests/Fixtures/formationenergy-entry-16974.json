@@ -1,0 +1,36 @@
+{
+  "links": {
+    "next": null,
+    "previous": null,
+    "base_url": {
+      "href": "http://oqmd.org/oqmdapi",
+      "meta": {
+        "_oqmd_version": "1.0"
+      }
+    }
+  },
+  "resource": {},
+  "data": [
+    {
+      "name": "NaAlH2CO5",
+      "entry_id": 16974,
+      "spacegroup": "Imma",
+      "ntypes": 5,
+      "band_gap": 5.255,
+      "delta_e": -2.05739610121138
+    }
+  ],
+  "meta": {
+    "query": {
+      "representation": "/formationenergy?fields=name,entry_id,spacegroup,ntypes,band_gap,delta_e&icsd=True&limit=2&filter=element_set=(Al-Fe),O"
+    },
+    "api_version": "1.0",
+    "time_stamp": "2019-10-08 15:13:12",
+    "data_returned": 1,
+    "data_available": 1,
+    "comments": "",
+    "query_tree": "",
+    "more_data_available": false
+  },
+  "response_message": "OK"
+}
