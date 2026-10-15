@@ -1,6 +1,6 @@
 # omnilab/oqmd
 
-**Not tested live**: OQMD did not answer on 2026-10-16 (see [Verified, and not](#verified-and-not)).
+**Not tested live**: OQMD did not answer on 2026-10-15 (see [Verified, and not](#verified-and-not)).
 
 ## Installation
 
@@ -42,9 +42,9 @@ are those OQMD's papers use for these quantities; the API's documentation gives 
 
 ## Verified, and not
 
-**Not tested live.** On 2026-10-16 `oqmd.org/oqmdapi/formationenergy` answered 502 ("Server
+**Not tested live.** On 2026-10-15 `oqmd.org/oqmdapi/formationenergy` answered 502 ("Server
 Error... Please try again in 30 seconds"), then every call to oqmd.org timed out (30 to 40 s),
-retried for two hours; the documentation (static.oqmd.org) answered. The fixtures are that
+retried for forty minutes; the documentation (static.oqmd.org) answered. The fixtures are that
 documentation's example answer, as published (two entries of `element_set=(Al-Fe),O`), one cut to
 its first entry, and one emptied (`Tests/Fixtures/README.md`). Not verified: every call of the
 package, `filter=entry_id=...` above all; the units; the rate the service bears (none published).

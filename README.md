@@ -1,7 +1,7 @@
 # omnilab/oqmd
 
-> **Not tested live.** OQMD did not answer on 2026-10-16 (a 502 "Server Error", then time-outs on
-> oqmd.org and on its API, retried over two hours). The package follows OQMD's published API
+> **Not tested live.** OQMD did not answer on 2026-10-15 (a 502 "Server Error", then time-outs on
+> oqmd.org and on its API, retried over forty minutes). The package follows OQMD's published API
 > documentation, and its tests read the example answer of that documentation. Details in
 > [docs/index.md](docs/index.md#verified-and-not).
 

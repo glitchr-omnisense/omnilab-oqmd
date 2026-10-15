@@ -15,7 +15,7 @@ use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
 /**
- * Not tested live (OQMD did not answer on 2026-10-16): the fixtures are
+ * Not tested live (OQMD did not answer on 2026-10-15): the fixtures are
  * the example answer of OQMD's documentation and two cut from it
  * (Fixtures/README.md).
  */

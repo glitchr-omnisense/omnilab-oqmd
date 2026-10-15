@@ -25,7 +25,7 @@ use Omnilab\Source\Query;
  * ("Fe-O").
  *
  * One call an entity or a page, no key. Not tested live: the service
- * did not answer on 2026-10-16 (README).
+ * did not answer on 2026-10-15 (README).
  */
 final class OqmdSource extends HttpSource
 {
