@@ -6,7 +6,7 @@
 > [docs/index.md](docs/index.md#verified-and-not).
 
 The Open Quantum Materials Database (Northwestern University) for
-[omniscient/omnilab](https://github.com/glitchr-studio/omnilab): DFT formation energies of some
+[omnisense/omnilab](https://github.com/glitchr-omnisense/omnilab): DFT formation energies of some
 700,000 materials - an entry by its OQMD id: its formula, space group, prototype, atoms and element
 types, volume, formation energy, distance to the convex hull, band gap, its ICSD id, the entry it
 duplicates -; the entries of a composition (`Al2O3`) or a phase space (`Fe-O`). No key.
