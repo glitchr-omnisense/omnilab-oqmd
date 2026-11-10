@@ -35,6 +35,17 @@ Density Functional Theory: The Open Quantum Materials Database (OQMD), JOM 65, 1
 and S. Kirklin et al., The Open Quantum Materials Database (OQMD): assessing the accuracy of DFT
 formation energies, npj Computational Materials 1, 15010 (2015).
 
+## Usage policy
+
+Declared as data in [`policy.json`](policy.json) (read at https://oqmd.org/download/ on 2026-11-10), and honoured on every request by the
+core: a limit reached waits when its window ends within `max_wait` seconds, else the request is not
+sent ([Usage policies](https://github.com/glitchr-omnisense/omnilab/blob/1.x/docs/policies.md)).
+
+- Limits: not published (unknown).
+- Licence: CC-BY-4.0; commercial use: allowed.
+- Credit: required: Saal J.E. et al., JOM 65, 1501-1509 (2013); Kirklin S. et al., npj Comput. Mater. 1, 15010 (2015) (https://oqmd.org/documentation/publications).
+- Needs: nothing.
+
 ## Responsibility
 
 This package is an independent, unofficial client: it is not affiliated with, endorsed by or

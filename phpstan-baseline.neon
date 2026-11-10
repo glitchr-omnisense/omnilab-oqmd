@@ -1,0 +1,115 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Binary operation "\." between ''icsd\: '' and mixed results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Cannot access offset ''data_available'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Cannot access offset ''more_data_available'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 4
+			path: OqmdSource.php
+
+		-
+			message: '#^Parameter \#1 \$row of method Omnilab\\Oqmd\\OqmdSource\:\:toEntity\(\) expects array\<string, mixed\>, array\<mixed, mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Parameter \#1 \$row of method Omnilab\\Oqmd\\OqmdSource\:\:toEntity\(\) expects array\<string, mixed\>, array\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Parameter \#2 \$array of function array_map expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Parameter \#3 \$value of class Omnilab\\Model\\Property constructor expects bool\|float\|int\|Omnilab\\Model\\Quantity\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: OqmdSource.php
+
+		-
+			message: '#^Cannot cast mixed to float\.$#'
+			identifier: cast.double
+			count: 1
+			path: OqmdSourceFactory.php
+
+		-
+			message: '#^Cannot cast mixed to string\.$#'
+			identifier: cast.string
+			count: 1
+			path: OqmdSourceFactory.php
+
+		-
+			message: '#^Cannot access property \$domain on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OqmdSourceTest.php
+
+		-
+			message: '#^Cannot access property \$id on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OqmdSourceTest.php
+
+		-
+			message: '#^Cannot access property \$kind on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OqmdSourceTest.php
+
+		-
+			message: '#^Cannot access property \$label on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OqmdSourceTest.php
+
+		-
+			message: '#^Cannot access property \$url on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: Tests/OqmdSourceTest.php
+
+		-
+			message: '#^Cannot call method value\(\) on Omnilab\\Model\\Entity\|null\.$#'
+			identifier: method.nonObject
+			count: 5
+			path: Tests/OqmdSourceTest.php
+
+		-
+			message: '#^Property Omnilab\\Oqmd\\Tests\\OqmdSourceTest\:\:\$calls \(list\<array\<string, string\>\>\) does not accept non\-empty\-list\<array\<int\|string, array\<mixed\>\|string\>\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: Tests/OqmdSourceTest.php

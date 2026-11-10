@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "oqmd",
+    "rateLimits": null,
+    "concurrency": null,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": null,
+        "caching": {
+            "permission": "allowed",
+            "maxTtl": null
+        },
+        "storage": "allowed",
+        "redistribution": "allowed",
+        "attribution": {
+            "required": true,
+            "text": "Saal J.E. et al., JOM 65, 1501-1509 (2013); Kirklin S. et al., npj Comput. Mater. 1, 15010 (2015)",
+            "url": "https://oqmd.org/documentation/publications",
+            "where": [
+                "source"
+            ]
+        },
+        "licence": "CC-BY-4.0"
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": "https://oqmd.org/download/",
+        "policy": null,
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": null,
+        "notes": "oqmd.org/download (read 2026-11-10, after earlier timeouts the same day): \"The data in OQMD is licensed under CC-BY 4.0\"; results used from the site are to be referenced as the publications page shows. No rate limit or API usage page found (static/docs/restful.html answered 502 then 404); no figure published. The OQMD API host timed out on a test call."
+    }
+}
