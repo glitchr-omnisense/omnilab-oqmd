@@ -2,8 +2,10 @@
 
 > **Not tested live.** OQMD did not answer on 2026-10-15 (a 502 "Server Error", then time-outs on
 > oqmd.org and on its API, retried over forty minutes). The package follows OQMD's published API
-> documentation, and its tests read the example answer of that documentation. Details in
-> [docs/index.md](docs/index.md#verified-and-not).
+> documentation, and its tests read the example answer of that documentation. On 2026-11-13 the
+> API answered the lookup by id (`formationenergy?filter=entry_id=16974`) with a 400 "Unknown
+> property: entry_id", then timed out twice: `entity()` may need another filter, not checked while
+> the service does not answer. Details in [docs/index.md](docs/index.md#verified-and-not).
 
 The Open Quantum Materials Database (Northwestern University) for
 [omnisense/omnilab](https://github.com/glitchr-omnisense/omnilab): DFT formation energies of some
@@ -25,6 +27,41 @@ omnilab:
             factory: oqmd
             options:
                 mailto: 'support@glitchr.io'   # in the User-Agent
+```
+
+## Install and a first call
+
+```sh
+composer require omnilab/oqmd
+```
+
+OQMD takes no key, but its API did not answer a first call on 2026-11-13 (a 400 "Unknown property:
+entry_id" to the lookup by id, then time-outs), nor on 2026-10-15. This first call needs none: the
+entry 16974, its answer the example of OQMD's API documentation (trimmed), so nothing leaves the
+process (Symfony's `MockHttpClient` answers in place of the service). A real call gives the factory
+no client (it makes its own) and the source `['mailto' => 'you@example.org']`.
+
+```php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Omnilab\Oqmd\OqmdSourceFactory;
+use Symfony\Component\HttpClient\MockHttpClient;
+use Symfony\Component\HttpClient\Response\MockResponse;
+
+// The service's answer, recorded: no account, and nothing leaves the process.
+$http = new MockHttpClient(new MockResponse('{"data": [{"name": "NaAlH2CO5", "entry_id": 16974, "spacegroup": "Imma", "ntypes": 5, "band_gap": 5.255,
+    "delta_e": -2.05739610121138}], "meta": {"data_returned": 1, "data_available": 1}, "response_message": "OK"}'));
+$oqmd = (new OqmdSourceFactory($http))->create([]);
+$entry = $oqmd->entity('oqmd:16974');
+echo $entry->label, ', ', $entry->value('space_group'), ', formation energy ', $entry->property('formation_energy_per_atom'), "\n";
+```
+
+Its output:
+
+```
+NaAlH2CO5 (Imma), Imma, formation energy -2.0573961012 eV/atom
 ```
 
 ## Terms of use
